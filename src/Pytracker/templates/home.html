@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python 101 Attendance</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_style.css') }}">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Python 101 Course</h1>
+        <p class="subtitle">
+            Scan the QR code below to submit your attendance
+        </p>
+
+        <div class="qr-box">
+            <img src="{{ url_for('static', filename='qr.png') }}">
+        </div>
+
+        <footer>
+            <p>Please submit only once</p>
+        </footer>
+    </main>
+
+</body>
+</html>
