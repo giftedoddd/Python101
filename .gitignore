@@ -1,2 +1,6 @@
-.venv/
 .idea/
+src/Pytracker/static/qr.png
+src/Pytracker/config.py
+src/Pytracker/.venv/
+src/Pytracker/.idea
+src/Pytracker/data/
