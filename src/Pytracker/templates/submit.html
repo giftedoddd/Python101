@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Attendance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='submit_style.css') }}">
+</head>
+<body>
+
+<main class="container">
+    <h1>Course Attendance</h1>
+
+    {% if message %}
+        <div class="alert {{ status }}">
+            {{ message }}
+        </div>
+    {% endif %}
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="student_id" placeholder="Your ID" required>
+        <button type="submit">Submit</button>
+    </form>
+</main>
+
+</body>
+</html>
