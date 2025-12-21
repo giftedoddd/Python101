@@ -68,3 +68,4 @@ if __name__ == "__main__":
         app.run(host=HOST, port=PORT, debug=DEBUG)
     finally:
         records_file.close()
+        exit(0)
