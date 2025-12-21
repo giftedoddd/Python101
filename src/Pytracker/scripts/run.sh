@@ -48,6 +48,7 @@ reset_ufw () {
 	sudo ufw enable || true
 }
 
+set -e
 trap clean_up SIGINT
 
 if [[ $(id -u) -ne 0 ]]; then
