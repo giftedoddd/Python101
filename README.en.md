@@ -11,22 +11,22 @@ This repository is designed to support the Python101 course taught at the univer
 
 The goal of the course is not only to teach Python syntax, but also to develop problem-solving skills, a programming mindset, and language-independent programming skills that can be applied to future courses and projects.
 
-### 📁 Directory Descriptions
+### Directory Descriptions
 
-- **assets/**  
+- [**assets/**](./assets)
   Contains images and visual assets used in documentation and course materials.
 
-- **resources/**  
+- [**resources/**](./resources)
   Lecture resources for the course.  
   This directory includes:
   - Raw Markdown lecture notes  
   - Compiled PDF files  
   - Presentation files (PPTX)
 
-- **src/**  
+- [**src/**](./src)
   Contains automation tools, example programs, and course-related projects.
   
-  - **Pytracker/**  
+  - [**Pytracker/**](./src/Pytracker)  
     A web-based student attendance tracking application developed as a practical course project.  
     It is written using **Python**, **HTML**, and **CSS**, and demonstrates how backend logic and simple frontend components work together.
     - `app.py`: Main application file handling routing and logic  
@@ -36,7 +36,7 @@ The goal of the course is not only to teach Python syntax, but also to develop p
     - `scripts/`: Helper and run scripts  
     - `static/` & `templates/`: Frontend assets and HTML templates for the web interface
 
-### ✅ How to Use This Repository
+### How to Use This Repository
 
 - Students can follow lectures using the files in `resources/`  
 - Code examples and projects can be explored and run from `src/`  
