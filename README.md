@@ -1,4 +1,4 @@
-# Python101 – Course Repository
+# Python101
 
 🌍 **Languages:** [English](./README.en.md) | [Türkçe](./README.md)
 
@@ -12,9 +12,8 @@ Bu repo, üniversitede verilen Python101 dersi için hazırlanmıştır. Ders bo
 ### Ders Hakkında
 
 **Python101**, Python programlamaya giriş niteliğinde bir derstir.  
-Derste aşağıdaki temel konular ele alınır:
 
-Dersin amacı yalnızca Python sözdizimini öğretmek değil, aynı zamanda problem çözme becerisi, programlama bakış açısı ve programlama dilinden bağımsız yazılım yapmanızı kazandırmaktır.
+Dersin amacı yalnızca Python sözdizimini öğretmek değil; aynı zamanda problem çözme becerisi, programlama bakış açısı ve programlama dilinden bağımsız yazılım geliştirme yetkinliği kazandırmaktır.
 
 ### 📁 Klasör Açıklamaları
 
@@ -31,7 +30,8 @@ Dersin amacı yalnızca Python sözdizimini öğretmek değil, aynı zamanda pro
 - **src/**  
   Derste kullanılan otomasyon araçları, örnek programlar ve projeler.
   
-- **Pytracker/**: Ders kapsamında geliştirilen, öğrenci yoklama kayıtlarını tutan web tabanlı bir uygulamadır. 
+- **Pytracker/**  
+  Ders kapsamında geliştirilen, öğrenci yoklama kayıtlarını tutan web tabanlı bir uygulamadır.  
   Uygulama **Python**, **HTML** ve **CSS** kullanılarak yazılmıştır ve arka uç mantığı ile basit ön yüz bileşenlerinin birlikte nasıl çalıştığını göstermektedir.
   - `app.py`: Yönlendirme ve uygulama mantığını içeren ana dosya  
   - `config.py`: Uygulama yapılandırma ayarları  
@@ -42,10 +42,10 @@ Dersin amacı yalnızca Python sözdizimini öğretmek değil, aynı zamanda pro
 
 ### ✅ Depo Nasıl Kullanılır?
 
-- Öğrenciler dersleri `resources/` klasöründen takip edebilir
-- Kod örnekleri ve projeler `src/` altında incelenebilir ve çalıştırılabilir
+- Öğrenciler dersleri `resources/` klasöründen takip edebilir  
+- Kod örnekleri ve projeler `src/` altında incelenebilir ve çalıştırılabilir  
 - Ders ilerledikçe repo güncellenecektir
 
 ---
 
-İyi çalışmalar
+İyi çalışmalar!
