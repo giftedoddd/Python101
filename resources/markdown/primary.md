@@ -65,3 +65,106 @@ Hello World!
 ```
 
 ---
+
+
+# Programming a Guessing Game
+
+Let’s jump into Python by working through a hands-on project together!  
+This exercise introduces you to several common Python concepts by showing how they are used in a real program.
+
+You’ll learn about:
+- variables  
+- match-case
+- modules  
+- functions  
+- and more!
+
+For now, we’ll implement a classic beginner programming problem: **a guessing game**.
+
+## How the game workscomplex
+
+```text
+The program generates a random integer between 1 and 100.
+It then prompts the player to enter a guess.
+After a guess is entered, the program indicates whether the guess
+is too low or too high.
+If the guess is correct, the program prints a congratulatory message
+and exits.
+```
+
+Now that we understand the problem statement, let’s look at how real programmers approach problems like this.
+
+It doesn’t matter how **complex** or **simple** a problem is—before writing any code, programmers pause and think about the problem and its solution. They do this by developing an algorithm.
+
+This means thinking about:
+* where we are now,
+* where we want to go,
+* what obstacles might be in the way,
+
+and then solving those obstacles **one step at a time**.
+
+In simple terms, programmers break a big problem into smaller, easier problems. Without doing this, you may end up spending a lot of energy without getting the expected result.
+
+```text
+Breaking a problem into small pieces is an important programming skill
+called decomposition.
+Instead of solving a big problem all at once, programmers split it
+into smaller, easier steps.
+Each step does one simple task, which makes the program easier
+to understand and maintain.
+```
+
+## How we will tackle this problem
+
+Below is a flowchart that shows the overall logic of the guessing game:
+![flowchart](../../assets/flowchart.jpg)
+
+## What is happening (step by step)
+1. The program starts running.
+2. It randomly chooses a number between 1 and 100.
+3. The program asks the player to guess the number.
+4. The player enters a guess.
+5. The program checks whether the guess is:
+    * lower than the secret number.
+    * higher than the secret number. 
+    * equal to the secret number. 
+6. If the guess is too low or too high, the program gives feedback and asks again.
+7. When the correct number is guessed, the program displays a success message and stops.
+
+## Let's start coding
+
+### Step 1: Create project structure
+
+1. Create a directory named ```guessing_game/```
+2. Inside that directory, create another directory named ```src/```
+3. Inside the ```src/``` directory, create a file called ```main.py```
+
+Your structure should look like this:
+```text
+guessing_game/
+└── src/
+    └── main.py
+```
+
+### Step 2: Write the initial code in ```main.py```
+
+1. Start with the main entry point
+In Python, this line ensures that the code only runs when the file is executed directly:
+    ```python
+    if __name__ == '__main__':
+        # This is where we write the code
+    ```
+
+2. Prompt the user for input
+Now let’s greet the user and ask them to enter a guess:
+    ```python
+    if __name__ == '__main__':
+        print("Welcome to the Guessing Game!!!")
+        guess = input("Please input your guess: ")
+        print("You guessed: " + guess)
+    ```
+Here:
+* `guess` is a variable that stores the user’s input.
+* `input()` always returns a string, which we’ll handle properly later.
+
+See [**Variables and Data Types**](./variables.md) for more details.
