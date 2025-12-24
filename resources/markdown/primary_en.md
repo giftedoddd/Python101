@@ -4,6 +4,9 @@
 
 - [Hello World Project](#write-your-first-python-project)
 - [Guessing Game Project](#programming-a-guessing-game)
+   - [Variables and Data Types](./variables.md)
+   - [Modules](./modules.md)
+   - [Control Flow](./control_flow.md)
 
 # Write Your First Python Project
 
