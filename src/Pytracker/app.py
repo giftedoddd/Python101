@@ -83,7 +83,15 @@ if __name__ == "__main__":
     submitted_fingerprints = set()
     records_file = open(DATA_FILE, "w", newline="", buffering=1)
     csv_writer = csv.writer(records_file)
-    csv_writer.writerow(["name", "student_id", "fingerprint", "timestamp"])
+    csv_writer.writerow([
+        "name",
+        "student_id",
+        "github_link",
+        "feedback",
+        "fingerprint",
+        "timestamp"
+    ])
+
     try:
         app.run(host=HOST, port=PORT, debug=DEBUG)
     finally:
