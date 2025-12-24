@@ -68,7 +68,6 @@ Hello World!
 
 ---
 
-
 # Programming a Guessing Game
 
 Let’s jump into Python by working through a hands-on project together!  
@@ -177,3 +176,27 @@ guessing_game/
 	* `input()` always returns a string, which we’ll handle properly later.
 
    See [**Variables and Data Types**](./variables.md) for more details.
+
+3. **Generate a secret number**
+
+   Next, we need to generate a secret number that the user will try to guess.  
+   The secret number should be different every time the program runs.  
+   We’ll use a random number between 1 and 100.
+
+   See [**Modules**](./modules.md) for more details.
+
+   First, we add the line `from random import randint` to import the `randint` function from the `random` module.
+
+   Next, we add two lines in the middle of the program. In the first line, we call the`randint(1, 100)` function,
+   which generates a random number.
+
+   Then, we assign that number to a variable called `secret_number` so we can use it later as we proceed.
+
+    ```python
+    from random import randint
+     
+    if __name__ == '__main__':
+        print("Welcome to the Guessing Game!!!")
+        guess = input("Please input your guess: ")
+        secret_number = randint(1, 100)
+    ```
