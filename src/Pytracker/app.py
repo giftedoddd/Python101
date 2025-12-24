@@ -59,7 +59,15 @@ def submit():
             return redirect(url_for("submit"))
 
         timestamp = datetime.now().isoformat()
-        csv_writer.writerow([name, student_id, fingerprint, timestamp])
+        csv_writer.writerow([
+            name,
+            student_id,
+            github_link,
+            feedback,
+            fingerprint,
+            timestamp
+        ])
+
         submitted_fingerprints.add(fingerprint)
 
         session["message"] = "Attendance recorded successfully!"
