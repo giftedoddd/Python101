@@ -19,8 +19,11 @@
     {% endif %}
 
     <form method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="text" name="student_id" placeholder="Your ID" required>
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="text" name="student_id" placeholder="Your ID">
+        <input type="url" name="github_link" placeholder="GitHub Profile">
+        <textarea name="feedback" placeholder="Suggestions or feedback about the lecture (optional)"></textarea>
+
         <button type="submit">Submit</button>
     </form>
 </main>
