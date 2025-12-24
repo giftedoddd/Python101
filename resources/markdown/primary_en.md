@@ -261,3 +261,70 @@ guessing_game/
      else:
         print("To small!")
    ```
+
+5. **Allowing Multiple Guesses with Looping**
+    
+   In this section, we will learn how to give the user multiple chances to guess the correct number using a `loop`.
+   
+   See [**Loops**](./loops.md) for more details.
+
+   Let's refactor the code to add allow user to guess again if they get the number wrong.
+
+   ```python
+   from random import randint
+   
+   if __name__ == '__main__':
+      print("Welcome to the Guessing Game!!!")
+      secret_number = randint(1, 100)
+   
+      while True: 
+         guess = int(input("Please input your guess: "))
+      
+         if guess == secret_number:
+            print("You win!")
+            break
+         elif guess > secret_number:
+            print("To big!")
+         else:
+            print("To small!")
+   ```
+   
+   ### Explanation:
+   
+   - We’ve moved everything from the guess input prompt onward into a `while` **loop**.
+   - **Indentation** is important: make sure the code inside the loop is indented by 4 spaces to keep it **clean** and **readable**.
+   
+   The program now asks for another guess forever, which introduces a new problem: the user can’t quit!
+   Let’s fix that by allowing the user to exit the loop if they type 'Q'.
+
+6. Allow the User Quit When They Press 'Q'
+
+   ```python
+   from random import randint
+   
+   if __name__ == '__main__':
+      print("Welcome to the Guessing Game!!!")
+      secret_number = randint(1, 100)
+   
+      while True:
+         user_input = input("Please input your guess or type 'Q' to quit: ")
+   
+         if user_input.lower() == 'q':
+            print("Goodbye!")
+            break
+   
+         guess = int(user_input)
+   
+         if guess == secret_number:
+            print("You win!")
+            break
+         elif guess > secret_number:
+            print("Too big!")
+         else:
+            print("Too small!")
+   ```
+   
+   ### Explanation
+   
+   The program will now continue asking for guesses, but the user can type 'Q' (or 'q') to quit the game.
+   The `input()` method checks if the user entered 'Q', and if so, the loop breaks, ending the game.
