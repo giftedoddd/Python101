@@ -43,8 +43,18 @@ def submit():
         github_link = request.form.get("github_link", "").strip()
         feedback = request.form.get("feedback", "").strip()
 
-        if not name or not student_id:
-            session["message"] = "Name and Student ID are required."
+        if not name:
+            session["message"] = "Name is required."
+            session["status"] = "error"
+            return redirect(url_for("submit"))
+
+        if not student_id:
+            session["message"] = "Student ID is required."
+            session["status"] = "error"
+            return redirect(url_for("submit"))
+
+        if not github_link:
+            session["message"] = "Github link is required."
             session["status"] = "error"
             return redirect(url_for("submit"))
 
