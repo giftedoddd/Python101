@@ -40,6 +40,8 @@ def submit():
 
         name = request.form.get("name", "").strip()
         student_id = request.form.get("student_id", "").strip()
+        github_link = request.form.get("github_link", "").strip()
+        feedback = request.form.get("feedback", "").strip()
 
         if not name or not student_id:
             session["message"] = "Name and Student ID are required."
