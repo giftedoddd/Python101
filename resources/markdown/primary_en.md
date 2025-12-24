@@ -200,3 +200,61 @@ guessing_game/
         guess = input("Please input your guess: ")
         secret_number = randint(1, 100)
     ```
+
+4. **Comparing the Guess to the Secret Number**
+
+   Now that we have both the user’s input and a randomly generated number, we can compare them to see if the guess is
+   correct.
+
+   See [**Control Flow**](./control_flow.md) for more details.
+
+    ```python
+    from random import randint
+    
+    if __name__ == '__main__':
+        print("Welcome to the Guessing Game!!!")
+        guess = input("Please input your guess: ")
+        secret_number = randint(1, 100)
+        
+        if guess > secret_number:
+            print("To big!")
+        elif guess <= secret_number:
+            print("To small!")
+        else:
+            print("You win!")
+    ```
+
+   **Question**: Does this work as we expect?
+
+   There are several problems with the code we wrote.
+
+	- Do you see the logic error that can occur in the second `elif` statement?
+	- Can we directly compare `guess` to `secret_number`?
+
+   #### Logic error in the conditions
+        The second condition uses elif guess <= secret_number.
+        Ask yourself: If the guess is exactly equal to the secret number, which condition will run?
+        Because this condition includes equality (<=), the else block may never execute.
+
+   #### Comparing different data types
+        The value returned by input() is always a string, while secret_number is an integer.
+        Comparing a string to an integer directly can cause an error or unexpected behavior.
+        We need to make sure both values are of the same type before comparing them.
+
+   #### Corrected Version:
+
+   ```python
+   from random import randint
+   
+   if __name__ == '__main__':
+     print("Welcome to the Guessing Game!!!")
+     guess = int(input("Please input your guess: "))
+     secret_number = randint(1, 100)
+     
+     if guess == secret_number:
+        print("You win!")
+     elif guess > secret_number:
+        print("To big!")
+     else:
+        print("To small!")
+   ```
