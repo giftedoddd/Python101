@@ -1,3 +1,15 @@
+from models.config import *
+
+from turtle import Turtle
+from enum import Enum
+import turtle
+
+
+class Kinds(Enum):
+    TAIL = 0
+    HEAD = 1
+
+
 class Block(Turtle):
     def __init__(self):
         super().__init__()
