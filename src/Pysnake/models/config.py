@@ -1,0 +1,10 @@
+HEAD_SHAPE_PATH = "assets/head_35x35.gif"
+TAIL_SHAPE_PATH = "assets/body_25x25.gif"
+HEAD_SIZE = 35
+TAIL_SIZE = 25
+STEP = 20
+INIT_SIZE = 10
+SPEED = 1
+SCREEN_WIDTH = 600
+SCREEN_HEIGHT = 600
+BG_COLOR = "white"
