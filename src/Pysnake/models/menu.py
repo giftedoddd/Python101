@@ -64,3 +64,18 @@ class __Menu:
         }
         return key_set
 
+
+class MainMenu(__Menu):
+    def on_select(self, choice):
+        choice = choice.upper()
+        if choice == "START":
+            print("Start game")
+            turtle.clearscreen()
+            # call game start here
+
+        elif choice == "SETTINGS":
+            print("Open settings")
+            # later you can open another menu
+
+        elif choice == "EXIT":
+            turtle.bye()
