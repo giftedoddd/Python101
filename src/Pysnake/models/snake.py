@@ -46,3 +46,18 @@ class Snake:
                 return True
         return False
 
+    def up(self):
+        if self.direction != Direction.DOWN:
+            self.direction = Direction.UP
+
+    def down(self):
+        if self.direction != Direction.UP:
+            self.direction = Direction.DOWN
+
+    def left(self):
+        if self.direction != Direction.RIGHT:
+            self.direction = Direction.LEFT
+
+    def right(self):
+        if self.direction != Direction.LEFT:
+            self.direction = Direction.RIGHT
