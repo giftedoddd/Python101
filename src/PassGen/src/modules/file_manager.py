@@ -10,3 +10,11 @@ def save_to_file(username, password):
         print(f"Failed to write passwords to file, {e}.")
         exit(100)
 
+def read_file():
+    try:
+        with open(FILE_PATH, mode="r") as password_file:
+            return password_file.readlines()
+    except Exception as e:
+        print(f"Failed to read passwords file, {e}.")
+        exit(100)
+
