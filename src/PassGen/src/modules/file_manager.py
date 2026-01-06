@@ -18,3 +18,10 @@ def read_file():
         print(f"Failed to read passwords file, {e}.")
         exit(100)
 
+def remove_from_file(lines):
+    try:
+        with open(FILE_PATH, mode="w") as password_file:
+            password_file.writelines(lines)
+    except Exception as e:
+        print(f"Failed to write to passwords file, {e}.")
+        exit(100)
