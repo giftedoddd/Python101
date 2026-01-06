@@ -18,3 +18,17 @@ def print_help():
     print(help_message)
 
 
+def validate_configs():
+    if not 6 <= PASSWORD_LENGTH <= 16:
+        return False
+
+    includes = UPPERCASE_LETTER or LOWERCASE_LETTER or SYMBOLS or NUMBERS
+    if not includes:
+        return False
+
+    if not FILE_PATH:
+        return False
+
+    return True
+
+
