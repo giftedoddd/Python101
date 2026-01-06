@@ -1,0 +1,6 @@
+PASSWORD_LENGTH = 12
+UPPERCASE_LETTER = True
+LOWERCASE_LETTER = True
+NUMBERS = True
+SYMBOLS = True
+FILE_PATH = "./src/data/passwords.txt"
