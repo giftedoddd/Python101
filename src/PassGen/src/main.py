@@ -1,3 +1,10 @@
+from modules.file_manager import save_to_file, read_file
+from modules.generator import generate
+from modules.helpers import *
+from modules.config import *
+from src.modules.file_manager import remove_from_file
+
+
 def print_help():
     help_message = \
         """
