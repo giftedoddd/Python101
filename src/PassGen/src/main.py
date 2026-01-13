@@ -27,13 +27,16 @@ def print_help():
 
 def validate_configs():
     if not 6 <= PASSWORD_LENGTH <= 16:
+        print("Password length must be higher than 5 and lower then 17.")
         return False
 
     includes = UPPERCASE_LETTER or LOWERCASE_LETTER or SYMBOLS or NUMBERS
     if not includes:
+        print("Can not generate password, at least one salt needed.")
         return False
 
     if not FILE_PATH:
+        print("No file path provided.")
         return False
 
     return True
@@ -43,7 +46,6 @@ def main():
     print("Welcome to PassGen program.")
 
     if not validate_configs():
-        print("Failed to validate configuration file.")
         exit(100)
 
     print("Enter the operation.")
